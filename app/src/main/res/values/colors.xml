@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- theme colors of the app.
+     These were left unchanged. Where necessary, they were overriden in styles resource -->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Other colors used in views -->
+    <color name="colorDivisionLine">#52695c</color>
+    <color name="textColor_style_1">#616161</color>
+    <color name="textColor_style_2">#000000</color>
+</resources>

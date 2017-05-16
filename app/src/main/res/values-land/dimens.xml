@@ -1,0 +1,11 @@
+<resources>
+    <!-- Margins and padding, for views -->
+    <dimen name="team_name_text_padding">8dp</dimen>
+    <dimen name="main_score_padding">24dp</dimen>
+    <dimen name="picture_margin">16dp</dimen>
+    <dimen name="reset_button_margin">8dp</dimen>
+
+    <!-- Height and width of views -->
+    <dimen name="picture_width">90dp</dimen>
+    <dimen name="picture_height">90dp</dimen>
+</resources>

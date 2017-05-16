@@ -1,0 +1,322 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,0); font-style: italic; }
+.s1 { color: rgb(0,0,255); font-weight: bold; }
+.s2 { color: rgb(0,0,0); }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+.s4 { color: rgb(0,0,0); }
+.s5 { color: rgb(0,0,128); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+activity_main.xml</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">&lt;?</span><span class="s1">xml version=</span><span class="s3">&quot;1.0&quot; </span><span class="s1">encoding=</span><span class="s3">&quot;utf-8&quot;</span><span class="s0">?&gt;</span><span class="s4"> 
+</span><span class="s2">&lt;</span><span class="s5">LinearLayout </span><span class="s1">xmlns:android=</span><span class="s3">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="s2"> 
+    </span><span class="s1">xmlns:tools=</span><span class="s3">&quot;http://schemas.android.com/tools&quot;</span><span class="s2"> 
+    </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/activity_main&quot;</span><span class="s2"> 
+    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+    </span><span class="s1">android:orientation=</span><span class="s3">&quot;vertical&quot;</span><span class="s2"> 
+    </span><span class="s1">tools:context=</span><span class="s3">&quot;com.example.android.courtcounter.MainActivity&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+    </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+        </span><span class="s1">android:orientation=</span><span class="s3">&quot;horizontal&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+            </span><span class="s1">android:layout_width=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_weight=</span><span class="s3">&quot;1&quot;</span><span class="s2"> 
+            </span><span class="s1">android:orientation=</span><span class="s3">&quot;vertical&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_1&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_gravity=</span><span class="s3">&quot;center&quot;</span><span class="s2"> 
+                </span><span class="s1">android:padding=</span><span class="s3">&quot;16dp&quot;</span><span class="s2"> 
+                </span><span class="s1">android:text=</span><span class="s3">&quot;@string/text_1&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_a_score&quot;</span><span class="s2"> 
+                </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_2&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_gravity=</span><span class="s3">&quot;center&quot;</span><span class="s2"> 
+                </span><span class="s1">android:paddingBottom=</span><span class="s3">&quot;20dp&quot;</span><span class="s2"> 
+                </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:orientation=</span><span class="s3">&quot;horizontal&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;attemptThreeForTeamA&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_4&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;addThreeForTeamA&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_1&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                    </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_a_3pt_stat&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/text_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:textAlignment=</span><span class="s3">&quot;center&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:orientation=</span><span class="s3">&quot;horizontal&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;attemptTwoForTeamA&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_4&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;addTwoForTeamA&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_2&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                    </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_a_2pt_stat&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/text_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:textAlignment=</span><span class="s3">&quot;center&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:orientation=</span><span class="s3">&quot;horizontal&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;attemptOneForTeamA&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_4&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;addOneForTeamA&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_3&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                    </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_a_1pt_stat&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/text_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:textAlignment=</span><span class="s3">&quot;center&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;</span><span class="s5">View</span><span class="s2"> 
+            </span><span class="s1">android:layout_width=</span><span class="s3">&quot;1dp&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_height=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_marginTop=</span><span class="s3">&quot;16dp&quot;</span><span class="s2"> 
+            </span><span class="s1">android:background=</span><span class="s3">&quot;#52695c&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+            </span><span class="s1">android:layout_width=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_weight=</span><span class="s3">&quot;1&quot;</span><span class="s2"> 
+            </span><span class="s1">android:orientation=</span><span class="s3">&quot;vertical&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_1&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_gravity=</span><span class="s3">&quot;center&quot;</span><span class="s2"> 
+                </span><span class="s1">android:padding=</span><span class="s3">&quot;16dp&quot;</span><span class="s2"> 
+                </span><span class="s1">android:text=</span><span class="s3">&quot;@string/text_2&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_b_score&quot;</span><span class="s2"> 
+                </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_2&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_gravity=</span><span class="s3">&quot;center&quot;</span><span class="s2"> 
+                </span><span class="s1">android:paddingBottom=</span><span class="s3">&quot;20dp&quot;</span><span class="s2"> 
+                </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:orientation=</span><span class="s3">&quot;horizontal&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">View</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_weight=</span><span class="s3">&quot;1&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                    </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_b_3pt_stat&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/text_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_marginLeft=</span><span class="s3">&quot;@dimen/text_margin&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:textAlignment=</span><span class="s3">&quot;center&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;addThreeForTeamB&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_1&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;attemptThreeForTeamB&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_4&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+            </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:orientation=</span><span class="s3">&quot;horizontal&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">View</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_weight=</span><span class="s3">&quot;1&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                    </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_b_2pt_stat&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/text_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_marginLeft=</span><span class="s3">&quot;@dimen/text_margin&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:textAlignment=</span><span class="s3">&quot;center&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;addTwoForTeamB&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_2&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;attemptTwoForTeamB&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_4&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;</span><span class="s5">LinearLayout</span><span class="s2"> 
+                </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+                </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                </span><span class="s1">android:orientation=</span><span class="s3">&quot;horizontal&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">View</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;0dp&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_weight=</span><span class="s3">&quot;1&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">TextView</span><span class="s2"> 
+                    </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/team_b_1pt_stat&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/text_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_marginLeft=</span><span class="s3">&quot;@dimen/text_margin&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;0&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:textAlignment=</span><span class="s3">&quot;center&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;addOneForTeamB&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_3&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+                </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+                    </span><span class="s1">style=</span><span class="s3">&quot;@style/textStyle_3&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_1&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:onClick=</span><span class="s3">&quot;attemptOneForTeamB&quot;</span><span class="s2"> 
+                    </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_4&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+            </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+    </span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+    </span><span class="s2">&lt;</span><span class="s5">RelativeLayout</span><span class="s2"> 
+        </span><span class="s1">android:layout_width=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2"> 
+        </span><span class="s1">android:layout_height=</span><span class="s3">&quot;match_parent&quot;</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;</span><span class="s5">ImageView</span><span class="s2"> 
+            </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/teamAPicture&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/picture_width&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_height=</span><span class="s3">&quot;@dimen/picture_height&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_margin=</span><span class="s3">&quot;@dimen/picture_margin&quot;</span><span class="s2"> 
+            </span><span class="s1">android:background=</span><span class="s3">&quot;@drawable/a_team_picture&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;</span><span class="s5">ImageView</span><span class="s2"> 
+            </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/teamBPicture&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/picture_width&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_height=</span><span class="s3">&quot;@dimen/picture_height&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_alignParentRight=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_margin=</span><span class="s3">&quot;@dimen/picture_margin&quot;</span><span class="s2"> 
+            </span><span class="s1">android:background=</span><span class="s3">&quot;@drawable/b_team_picture&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+            </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/reset_button&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_2&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_alignParentBottom=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_centerHorizontal=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_marginBottom=</span><span class="s3">&quot;32dp&quot;</span><span class="s2"> 
+            </span><span class="s1">android:onClick=</span><span class="s3">&quot;resetScores&quot;</span><span class="s2"> 
+            </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_5&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+        </span><span class="s2">&lt;</span><span class="s5">Button</span><span class="s2"> 
+            </span><span class="s1">android:id=</span><span class="s3">&quot;@+id/show_stat_button&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_width=</span><span class="s3">&quot;@dimen/button_width_2&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_height=</span><span class="s3">&quot;wrap_content&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_above=</span><span class="s3">&quot;@id/reset_button&quot;</span><span class="s2"> 
+            </span><span class="s1">android:layout_centerHorizontal=</span><span class="s3">&quot;true&quot;</span><span class="s2"> 
+            </span><span class="s1">android:onClick=</span><span class="s3">&quot;moreStat&quot;</span><span class="s2"> 
+            </span><span class="s1">android:text=</span><span class="s3">&quot;@string/ButtonText_6&quot; </span><span class="s2">/&gt;</span><span class="s4"> 
+ 
+    </span><span class="s2">&lt;/</span><span class="s5">RelativeLayout</span><span class="s2">&gt;</span><span class="s4"> 
+ 
+</span><span class="s2">&lt;/</span><span class="s5">LinearLayout</span><span class="s2">&gt;</span><span class="s4"> 
+</span></pre>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,255); }
+.s3 { color: rgb(128,128,128); font-style: italic; }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+MainActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.example.android.courtcounter; 
+ 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+</span><span class="s0">import </span><span class="s1">android.widget.TextView; 
+ 
+</span><span class="s0">import static </span><span class="s1">com.example.android.courtcounter.R.id.team_a_1pt_stat; 
+ 
+</span><span class="s0">public class </span><span class="s1">MainActivity </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+ 
+    </span><span class="s0">int </span><span class="s1">scoreTeamA = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">made3ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">all3ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">made2ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">all2ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">made1ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">all1ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">scoreTeamB = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">made3ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">all3ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">made2ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">all2ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">made1ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+    </span><span class="s0">int </span><span class="s1">all1ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_main); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Increases score and number of accurate shots made for team A. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">addOneForTeamA(View v) { 
+        scoreTeamA = scoreTeamA + </span><span class="s2">1</span><span class="s1">; 
+        all1ptShotsTeamA = all1ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        made1ptShotsTeamA = made1ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        displayForTeamA(scoreTeamA); 
+        display1ptStatForTeamA(Math.round(made1ptShotsTeamA * </span><span class="s2">100 </span><span class="s1">/ all1ptShotsTeamA)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">addTwoForTeamA(View v) { 
+        scoreTeamA = scoreTeamA + </span><span class="s2">2</span><span class="s1">; 
+        all2ptShotsTeamA = all2ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        made2ptShotsTeamA = made2ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        displayForTeamA(scoreTeamA); 
+        display2ptStatForTeamA(Math.round(made2ptShotsTeamA * </span><span class="s2">100 </span><span class="s1">/ all2ptShotsTeamA)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">addThreeForTeamA(View v) { 
+        scoreTeamA = scoreTeamA + </span><span class="s2">3</span><span class="s1">; 
+        all3ptShotsTeamA = all3ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        made3ptShotsTeamA = made3ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        displayForTeamA(scoreTeamA); 
+        display3ptStatForTeamA(Math.round(made3ptShotsTeamA * </span><span class="s2">100 </span><span class="s1">/ all3ptShotsTeamA)); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Increases number of attempts for team A. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">attemptOneForTeamA(View v) { 
+        all1ptShotsTeamA = all1ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        display1ptStatForTeamA(Math.round(made1ptShotsTeamA * </span><span class="s2">100 </span><span class="s1">/ all1ptShotsTeamA)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">attemptTwoForTeamA(View v) { 
+        all2ptShotsTeamA = all2ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        display2ptStatForTeamA(Math.round(made2ptShotsTeamA * </span><span class="s2">100 </span><span class="s1">/ all2ptShotsTeamA)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">attemptThreeForTeamA(View v) { 
+        all3ptShotsTeamA = all3ptShotsTeamA + </span><span class="s2">1</span><span class="s1">; 
+        display3ptStatForTeamA(Math.round(made3ptShotsTeamA * </span><span class="s2">100 </span><span class="s1">/ all3ptShotsTeamA)); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Displays the given score for Team A. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">displayForTeamA(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(R.id.team_a_score); 
+        scoreView.setText(String.valueOf(score)); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Displays statistics for Team A. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">display1ptStatForTeamA(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(team_a_1pt_stat); 
+        scoreView.setText(String.valueOf(score) + </span><span class="s4">&quot;%&quot;</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">display2ptStatForTeamA(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(R.id.team_a_2pt_stat); 
+        scoreView.setText(String.valueOf(score) + </span><span class="s4">&quot;%&quot;</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">display3ptStatForTeamA(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(R.id.team_a_3pt_stat); 
+        scoreView.setText(String.valueOf(score) + </span><span class="s4">&quot;%&quot;</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Increases score and number of accurate shots made for team B. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">addOneForTeamB(View v) { 
+        scoreTeamB = scoreTeamB + </span><span class="s2">1</span><span class="s1">; 
+        all1ptShotsTeamB = all1ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        made1ptShotsTeamB = made1ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        displayForTeamB(scoreTeamB); 
+        display1ptStatForTeamB(Math.round(made1ptShotsTeamB * </span><span class="s2">100 </span><span class="s1">/ all1ptShotsTeamB)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">addTwoForTeamB(View v) { 
+        scoreTeamB = scoreTeamB + </span><span class="s2">2</span><span class="s1">; 
+        all2ptShotsTeamB = all2ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        made2ptShotsTeamB = made2ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        displayForTeamB(scoreTeamB); 
+        display2ptStatForTeamB(Math.round(made2ptShotsTeamB * </span><span class="s2">100 </span><span class="s1">/ all2ptShotsTeamB)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">addThreeForTeamB(View v) { 
+        scoreTeamB = scoreTeamB + </span><span class="s2">3</span><span class="s1">; 
+        all3ptShotsTeamB = all3ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        made3ptShotsTeamB = made3ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        displayForTeamB(scoreTeamB); 
+        display3ptStatForTeamB(Math.round(made3ptShotsTeamB * </span><span class="s2">100 </span><span class="s1">/ all3ptShotsTeamB)); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Increases number of attempts for team B. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">attemptOneForTeamB(View v) { 
+        all1ptShotsTeamB = all1ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        display1ptStatForTeamB(Math.round(made1ptShotsTeamB * </span><span class="s2">100 </span><span class="s1">/ all1ptShotsTeamB)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">attemptTwoForTeamB(View v) { 
+        all2ptShotsTeamB = all2ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        display2ptStatForTeamB(Math.round(Math.round(made2ptShotsTeamB * </span><span class="s2">100 </span><span class="s1">/ all2ptShotsTeamB))); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">attemptThreeForTeamB(View v) { 
+        all3ptShotsTeamB = all3ptShotsTeamB + </span><span class="s2">1</span><span class="s1">; 
+        display3ptStatForTeamB(Math.round(made3ptShotsTeamB * </span><span class="s2">100 </span><span class="s1">/ all3ptShotsTeamB)); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Displays the given score for Team B. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">displayForTeamB(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score); 
+        scoreView.setText(String.valueOf(score)); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Displays statistics for Team B. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">display1ptStatForTeamB(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(R.id.team_b_1pt_stat); 
+        scoreView.setText(String.valueOf(score) + </span><span class="s4">&quot;%&quot;</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">display2ptStatForTeamB(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(R.id.team_b_2pt_stat); 
+        scoreView.setText(String.valueOf(score) + </span><span class="s4">&quot;%&quot;</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">display3ptStatForTeamB(</span><span class="s0">int </span><span class="s1">score) { 
+        TextView scoreView = (TextView) findViewById(R.id.team_b_3pt_stat); 
+        scoreView.setText(String.valueOf(score) + </span><span class="s4">&quot;%&quot;</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Displays more detailed statistics of both teams. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">moreStat(View v) { 
+        displayMoreStatForA1(made1ptShotsTeamA + </span><span class="s4">&quot;/&quot; </span><span class="s1">+ all1ptShotsTeamA); 
+        displayMoreStatForA2(made2ptShotsTeamA + </span><span class="s4">&quot;/&quot; </span><span class="s1">+ all2ptShotsTeamA); 
+        displayMoreStatForA3(made3ptShotsTeamA + </span><span class="s4">&quot;/&quot; </span><span class="s1">+ all3ptShotsTeamA); 
+        displayMoreStatForB1(made1ptShotsTeamB + </span><span class="s4">&quot;/&quot; </span><span class="s1">+ all1ptShotsTeamB); 
+        displayMoreStatForB2(made2ptShotsTeamB + </span><span class="s4">&quot;/&quot; </span><span class="s1">+ all2ptShotsTeamB); 
+        displayMoreStatForB3(made3ptShotsTeamB + </span><span class="s4">&quot;/&quot; </span><span class="s1">+ all3ptShotsTeamB); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">displayMoreStatForA1(String a1) { 
+        TextView stat1View = (TextView) findViewById(R.id.team_a_1pt_stat); 
+        stat1View.setText(String.valueOf(a1)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">displayMoreStatForA2(String a2) { 
+        TextView stat2View = (TextView) findViewById(R.id.team_a_2pt_stat); 
+        stat2View.setText(String.valueOf(a2)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">displayMoreStatForA3(String a3) { 
+        TextView stat3View = (TextView) findViewById(R.id.team_a_3pt_stat); 
+        stat3View.setText(String.valueOf(a3)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">displayMoreStatForB1(String b1) { 
+        TextView stat1View = (TextView) findViewById(R.id.team_b_1pt_stat); 
+        stat1View.setText(String.valueOf(b1)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">displayMoreStatForB2(String b2) { 
+        TextView stat2View = (TextView) findViewById(R.id.team_b_2pt_stat); 
+        stat2View.setText(String.valueOf(b2)); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">displayMoreStatForB3(String b3) { 
+        TextView stat3View = (TextView) findViewById(R.id.team_b_3pt_stat); 
+        stat3View.setText(String.valueOf(b3)); 
+    } 
+ 
+    </span><span class="s3">/** 
+     * Resets the scores and statistics of both teams. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">resetScores(View v) { 
+        scoreTeamA = </span><span class="s2">0</span><span class="s1">; 
+        scoreTeamB = </span><span class="s2">0</span><span class="s1">; 
+        displayForTeamA(scoreTeamA); 
+        displayForTeamB(scoreTeamB); 
+        made3ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+        all3ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+        made2ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+        all2ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+        made1ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+        all1ptShotsTeamA = </span><span class="s2">0</span><span class="s1">; 
+        made3ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+        all3ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+        made2ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+        all2ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+        made1ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+        all1ptShotsTeamB = </span><span class="s2">0</span><span class="s1">; 
+        display3ptStatForTeamA(</span><span class="s2">0</span><span class="s1">); 
+        display2ptStatForTeamA(</span><span class="s2">0</span><span class="s1">); 
+        display1ptStatForTeamA(</span><span class="s2">0</span><span class="s1">); 
+        display3ptStatForTeamB(</span><span class="s2">0</span><span class="s1">); 
+        display2ptStatForTeamB(</span><span class="s2">0</span><span class="s1">); 
+        display1ptStatForTeamB(</span><span class="s2">0</span><span class="s1">); 
+    } 
+} 
+ 
+</span></pre>
+</body>
+</html>
